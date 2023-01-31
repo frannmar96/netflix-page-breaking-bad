@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- link css -->
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <!-- link google fonts -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <title>Netflix Page</title>
+  </head>
+  <body>
+    <main>
+      <header>
+        <a href="#" class="logo"
+          ><img src="/img/logo-netflix.png" width="200" alt="logo-netflix"
+        /></a>
+        <ul class="navigation">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">TV Shows</a></li>
+          <li><a href="#">Movies</a></li>
+          <li><a href="#">Latest</a></li>
+          <li><a href="#">My List</a></li>
+        </ul>
+        <div class="search">
+          <input type="text" placeholder="Search" />
+          <button class="btn-buscar">
+            <span class="material-icons">search</span>
+          </button>
+        </div>
+      </header>
+      <section class="banner">
+        <img
+          src="/img/imagen-banner.jpg"
+          alt="imagen-banner-breaking-bad"
+          class="bg"
+        />
+        <span class="sombra-img"></span>
+        <div class="content">
+          <img
+            src="/img/logo-breaking-bad.png"
+            class="movie-title"
+            width="1000"
+            alt="letra-n-logo"
+          />
+          <h4>
+            <span>2023</span>
+            <span> <i>16+</i> </span>
+            <span>5 Temporadas</span>
+            <span>Serie</span>
+          </h4>
+          <p>
+            Un profesor de Química de secundaria con cáncer terminal se asocia a
+            un exestudiante para asegurar el futuro de su familia al fabricar y
+            vender metanfetamina. <br /><br />
+            Protagonistas: Bryan Cranston, Aaron Paul,Anna Gunn. <br />
+            Creado por: Vince Gilligan
+          </p>
+          <div class="buttons">
+            <a href="#">Play</a>
+            <a href="#">My List</a>
+          </div>
+        </div>
+        <a href="#" class="play" onclick="toggleVideo()" ;
+          ><img src="/img/boton-play.png" />Watch Trailer</a
+        >
+      </section>
+      <section class="trailer">
+        <video
+          src="/img/Breaking Bad _ Tráiler Temporada 1 (Español).mp4"
+          controls="true"
+        ></video>
+        <img
+          src="/img/boton-x.png"
+          class="close"
+          onclick="toggleVideo();"
+          width="25"
+        />
+      </section>
+    </main>
+  </body>
+  <script src="/js/index.js"></script>
+</html>
